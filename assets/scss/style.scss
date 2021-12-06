@@ -1,0 +1,102 @@
+// =============== 
+// Calculator
+// ==============
+
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gemunu Libre', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    min-height: calc(100vh - 80px);
+    font-weight: 700;
+}
+
+.container {
+    width: 620px;
+    background-color: #8DCFED;
+    padding: 40px;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-gap: 20px 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+
+    .display {
+        grid-column: 1 / 5;
+        background-color: #78A7BB;
+        height: 100%;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 28px;
+        padding: 0 15px;
+        box-shadow: 0 -8px 0 #618698;
+        margin-top: 8px;
+        color: #fff;
+        letter-spacing: 1px;
+        overflow: hidden;
+    }
+
+    button {
+        border: 0;
+        font-size: 28px;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 8px 0 #78A7BB;
+        color: #81898E;
+        font-family: 'Gemunu Libre', sans-serif;
+        font-weight: 600;
+        height: 65px;
+        background-color: #fff;
+
+        &.active {
+            box-shadow: 0 4px 0 #78A7BB;
+            transform: translateY(4px);
+        }
+
+        &.operator,
+        &.percent {
+            background-color: #fee2eb;
+            box-shadow: 0 8px 0  #78A7BB;
+
+            &.active {
+                box-shadow: 0 4px 0 #78A7BB;
+                transform: translateY(4px);
+            }
+        }
+
+        &.point {
+            background-color: #fff;
+        }
+
+        &.equal {
+            background-color: #F1FF8B;
+            box-shadow: 0 8px 0 #9CAB44;
+            grid-column: 3 / 5;
+
+            &.active {
+                box-shadow: 0 4px 0 #9CAB44;
+                transform: translateY(4px);
+            }
+        }
+
+        &.color {
+            background-color: #FF9FA7;
+            color: #fff;
+
+            &.active {
+                box-shadow: 0 4px 0 #78A7BB;
+                transform: translateY(4px);
+            }
+        }
+    }
+
+}
