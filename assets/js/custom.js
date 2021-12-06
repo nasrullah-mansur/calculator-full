@@ -16,6 +16,7 @@ class Calculator {
         this.backHandler();
         this.percentageHandler();
         this.totalHandler();
+        this.clearHandler();
     }
 
     // Button Style;
@@ -172,11 +173,11 @@ class Calculator {
             this.clear();
         })
     }
-
+    
     clear() {
         this.displayValue = [];
         this.operationValue = [];
-        this.displayArea.innerHTML = '0';
+        this.display();
     }
 
 }
