@@ -1,126 +1,128 @@
 @import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;500;600;700&display=swap");
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Gemunu Libre', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 30px;
-  min-height: calc(100vh - 80px);
-  font-weight: 700;
+    margin: 0;
+    padding: 0;
+    font-family: "Gemunu Libre", sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 30px;
+    min-height: calc(100vh - 80px);
+    font-weight: 700;
 }
 
 .container {
-  width: 620px;
-  background-color: #8DCFED;
-  padding: 40px;
-  border-radius: 8px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 20px 15px;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (1fr)[6];
-      grid-template-rows: repeat(6, 1fr);
+    width: 620px;
+    background-color: #8dcfed;
+    padding: 40px;
+    border-radius: 8px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 20px 15px;
+    -ms-grid-columns: (1fr) [4];
+    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr) [6];
+    grid-template-rows: repeat(6, 1fr);
 }
 
 .container .display {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1 / 5;
-  background-color: #78A7BB;
-  height: 100%;
-  border-radius: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  font-size: 28px;
-  padding: 0 15px;
-  -webkit-box-shadow: 0 -8px 0 #618698;
-          box-shadow: 0 -8px 0 #618698;
-  margin-top: 8px;
-  color: #fff;
-  letter-spacing: 1px;
-  overflow: hidden;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
+    background-color: #78a7bb;
+    height: 100%;
+    border-radius: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    font-size: 28px;
+    padding: 0 15px;
+    -webkit-box-shadow: 0 -8px 0 #618698;
+    box-shadow: 0 -8px 0 #618698;
+    margin-top: 8px;
+    color: #fff;
+    letter-spacing: 1px;
+    overflow: hidden;
 }
 
 .container button {
-  border: 0;
-  font-size: 28px;
-  cursor: pointer;
-  border-radius: 8px;
-  -webkit-box-shadow: 0 8px 0 #78A7BB;
-          box-shadow: 0 8px 0 #78A7BB;
-  color: #81898E;
-  font-family: 'Gemunu Libre', sans-serif;
-  font-weight: 600;
-  height: 65px;
-  background-color: #fff;
+    border: 0;
+    font-size: 28px;
+    cursor: pointer;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 8px 0 #78a7bb;
+    box-shadow: 0 8px 0 #78a7bb;
+    color: #81898e;
+    font-family: "Gemunu Libre", sans-serif;
+    font-weight: 600;
+    height: 65px;
+    background-color: #fff;
 }
 
 .container button.active {
-  -webkit-box-shadow: 0 4px 0 #78A7BB;
-          box-shadow: 0 4px 0 #78A7BB;
-  -webkit-transform: translateY(4px);
-          transform: translateY(4px);
+    -webkit-box-shadow: 0 4px 0 #78a7bb;
+    box-shadow: 0 4px 0 #78a7bb;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
 }
 
-.container button.operator, .container button.percent {
-  background-color: #fee2eb;
-  -webkit-box-shadow: 0 8px 0  #78A7BB;
-          box-shadow: 0 8px 0  #78A7BB;
+.container button.operator,
+.container button.percent {
+    background-color: #fee2eb;
+    -webkit-box-shadow: 0 8px 0 #78a7bb;
+    box-shadow: 0 8px 0 #78a7bb;
 }
 
-.container button.operator.active, .container button.percent.active {
-  -webkit-box-shadow: 0 4px 0 #78A7BB;
-          box-shadow: 0 4px 0 #78A7BB;
-  -webkit-transform: translateY(4px);
-          transform: translateY(4px);
+.container button.operator.active,
+.container button.percent.active {
+    -webkit-box-shadow: 0 4px 0 #78a7bb;
+    box-shadow: 0 4px 0 #78a7bb;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
 }
 
 .container button.point {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 .container button.equal {
-  background-color: #F1FF8B;
-  -webkit-box-shadow: 0 8px 0 #9CAB44;
-          box-shadow: 0 8px 0 #9CAB44;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-column: 3 / 5;
+    background-color: #f1ff8b;
+    -webkit-box-shadow: 0 8px 0 #9cab44;
+    box-shadow: 0 8px 0 #9cab44;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3 / 5;
 }
 
 .container button.equal.active {
-  -webkit-box-shadow: 0 4px 0 #9CAB44;
-          box-shadow: 0 4px 0 #9CAB44;
-  -webkit-transform: translateY(4px);
-          transform: translateY(4px);
+    -webkit-box-shadow: 0 4px 0 #9cab44;
+    box-shadow: 0 4px 0 #9cab44;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
 }
 
 .container button.color {
-  background-color: #FF9FA7;
-  color: #fff;
+    background-color: #ff9fa7;
+    color: #fff;
 }
 
 .container button.color.active {
-  -webkit-box-shadow: 0 4px 0 #78A7BB;
-          box-shadow: 0 4px 0 #78A7BB;
-  -webkit-transform: translateY(4px);
-          transform: translateY(4px);
+    -webkit-box-shadow: 0 4px 0 #78a7bb;
+    box-shadow: 0 4px 0 #78a7bb;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
 }
