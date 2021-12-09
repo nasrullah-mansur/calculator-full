@@ -108,7 +108,7 @@ class Calculator {
             Percentage();
             this.display();
         });
-
+        
         function Percentage() {
             let validationCheck = calculatorDisplay.length % 2 === 0 && calculatorDisplay.length !== 0;
             if (validationCheck) {
@@ -161,6 +161,8 @@ class Calculator {
         } else {
             this.displayArea.innerHTML = finalDisplay;
         }
+
+        console.log(this.displayValue, this.operationValue);
     }
 
     // Clear data handler;

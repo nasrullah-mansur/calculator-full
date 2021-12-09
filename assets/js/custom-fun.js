@@ -135,7 +135,7 @@ function display() {
     if (finalDisplay === "") {
         displayArea.innerHTML = "0";
     } else {
-        displayArea.innerHTML = finalDisplay;
+        displayArea.innerHTML = finalDisplay
     }
 }
 
